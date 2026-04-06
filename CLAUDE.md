@@ -168,11 +168,19 @@ event catering chicken Nigeria, chicken Ile-Ife, chicken Ibadan, poultry farm Os
 
 | Service | Purpose | Account | Notes |
 |---|---|---|---|
-| Netlify | Hosting + auto-deploy | mindkraftfarm@gmail.com | Free plan |
+| Netlify | Hosting + auto-deploy | mindkraftfarm@gmail.com | Free plan, 300 credits/month, resets monthly |
 | GitHub | Code repository | Lorbar | SSH auth set up |
 | Web3Forms | Contact form emails | mindkraftfarm@gmail.com | Free, access key in form hidden input |
 | Google Search Console | SEO indexing | mindkraftfarm@gmail.com | Verified ✅ |
+| Firebase Realtime DB | Finance app cloud sync | mindkraftfarm@gmail.com Google account | Free Spark plan, project: mindkraft-farm |
 | Web3Forms access key | `eb006908-1dea-47d2-a39f-016db0572f92` | — | In index.html hidden input |
+
+### Netlify Credits Note
+- Free plan gives 300 build credits/month (resets on the 5th of each month)
+- Credits are only used when pushing new code (each commit = one build per site)
+- Websites stay live even if credits run out — only new deploys are paused
+- **To conserve credits:** batch multiple changes into a single commit rather than pushing every small fix separately
+- Firebase reads/writes do NOT consume Netlify credits
 
 ---
 
@@ -184,6 +192,44 @@ event catering chicken Nigeria, chicken Ile-Ife, chicken Ibadan, poultry farm Os
 **GitHub:** github.com/Lorbar/mindkraft-finance (Private)
 **Purpose:** Internal finance tracking — income, expenses, P&L reporting
 **Deploy workflow:** Same as website — edit files, commit, push, Netlify auto-deploys
+
+### Finance App — Pages & Features
+- Dashboard (stat cards, 6-month P&L bar chart, expense donut chart, recent transactions)
+- Income Tracker (add/edit, CSV export, receipt attachments)
+- Expense Tracker (add/edit, category breakdown, CSV export, receipt attachments)
+- Poultry Cycles (start/close cycles, log mortality, Feed Consumption Log)
+- Reports (monthly P&L table, targets vs actuals)
+- Settings (business info, data management, change password)
+
+### Finance App — Brand & Design
+- MK Luxury Stacked SVG logo in dark navy sidebar (white text, gold rules)
+- Colours: Navy `#1E446A`, Gold `#D4A96A`, Dark Navy `#0E2130`, Accent `#956E46`
+- Fonts: Cormorant Garamond, Roboto, DM Sans (same as main website)
+- Chart colours: Income bars `#1E446A` (navy), Expense bars `#c0392b` (red), Donut = navy/gold palette
+- Clean SVG nav icons (no emojis)
+
+### Finance App — Authentication
+- **Login screen:** Full-screen dark navy overlay with MK logo, password field
+- **Method:** SHA-256 password hashing via Web Crypto API (password never stored in plain text)
+- **Default password:** `MindKraft2026`
+- **Session:** Stored in `sessionStorage` (key: `mk_auth_v1`) — clears when browser tab is closed
+- **Custom password:** Stored as SHA-256 hash in `localStorage` (key: `mk_pw_hash`) — survives page refreshes
+- **Change password:** Available in Settings → Change Password (no redeploy needed)
+- **Logout:** Sign Out button at bottom of sidebar
+
+### Finance App — Cloud Sync (Firebase)
+- **Firebase project:** `mindkraft-farm` (linked to mindkraftfarm@gmail.com Google account)
+- **Database URL:** `https://mindkraft-farm-default-rtdb.firebaseio.com`
+- **Secret data path:** `/mk_8faa8153bc41494d.json` (keep this secret)
+- **Rules:** Public read/write (secured by obscure path + app login)
+- **Sync behaviour:**
+  - Fresh login → fetches from Firebase first (cloud = source of truth), then shows app
+  - If Firebase empty on first login → uploads local data to seed the cloud
+  - Page refresh (already logged in) → loads from localStorage cache instantly, then background-syncs from Firebase
+  - Every save (income/expense/cycle/etc.) → writes to localStorage AND pushes to Firebase
+- **Result:** Any device that logs in always sees the same, up-to-date data
+- **Firebase free limits:** 1 GB storage, 10 GB/month download — farm data is tiny (a few KB), effectively unlimited
+- **Firebase reads/writes do NOT use Netlify credits** — completely separate services
 
 ---
 
@@ -222,3 +268,6 @@ event catering chicken Nigeria, chicken Ile-Ife, chicken Ibadan, poultry farm Os
 - **Logo — The Luxury Stacked:** Client selected from 5 concepts; chosen for premium, no-icon look
 - **Unsplash images:** Free CDN, no hosting costs, white broiler chickens only (important to client)
 - **Web3Forms:** Free forever, unlimited submissions, no account needed beyond access key
+- **SHA-256 password hashing:** Password never stored in plain text — only hash stored in localStorage; can be changed from within the app without redeploying
+- **Firebase over localStorage for sync:** localStorage is device-specific; Firebase gives a single cloud source of truth across all devices for free
+- **Firebase open rules + secret path:** Simpler than Firebase Auth for a single-user internal app; secret path + app login provides adequate security for farm finance data
