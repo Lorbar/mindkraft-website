@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MindKraft Farm Venture – Premium Broiler Chicken | Osogbo, Osun State</title>
+  <meta name="description" content="MindKraft Farm Venture supplies premium farm-raised broiler chickens to households, restaurants, and wholesale buyers across Osogbo and Osun State, Nigeria. Fresh, consistent, and professionally managed." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Roboto:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary:'#1E446A', secondary:'#367BBE', accent:'#FDF7EC',
+            'accent-2':'#FFF9EC', mtext:'#102539', brown:'#956E46',
+            deep:'#2B649B', navy:'#0E2130',
+          },
+          fontFamily: {
+            display:['Cormorant Garamond','serif'],
+            roboto:['Roboto','sans-serif'],
+            sans:['DM Sans','sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    *{box-sizing:border-box;}
+    body{background-color:#FDF7EC;color:#102539;font-family:'DM Sans',sans-serif;font-size:17px;margin:0;-webkit-font-smoothing:antialiased;}
+
+    .hero-overlay{background:linear-gradient(105deg,rgba(14,33,48,0.88) 0%,rgba(30,68,106,0.60) 52%,rgba(0,0,0,0.08) 100%);}
+    .divider-gold{width:56px;height:2px;background:linear-gradient(90deg,#956E46,#D4A96A,#956E46);border-radius:2px;}
+    .card-hover{transition:transform 0.35s cubic-bezier(.22,.68,0,1.2),box-shadow 0.35s ease;}
+    .card-hover:hover{transform:translateY(-7px);box-shadow:0 22px 44px rgba(30,68,106,0.16);}
+
+    .btn-primary{display:inline-block;background:linear-gradient(135deg,#1E446A 0%,#2B649B 100%);color:#fff;padding:0.78rem 2rem;border-radius:3px;font-family:'Roboto',sans-serif;font-weight:600;font-size:0.82rem;letter-spacing:0.13em;text-transform:uppercase;transition:opacity 0.2s,transform 0.2s;}
+    .btn-primary:hover{opacity:0.88;transform:translateY(-1px);}
+    .btn-ghost{display:inline-flex;align-items:center;gap:8px;border:1.5px solid rgba(255,255,255,0.55);color:rgba(255,255,255,0.90);padding:0.75rem 1.8rem;border-radius:3px;font-family:'Roboto',sans-serif;font-weight:500;font-size:0.82rem;letter-spacing:0.09em;text-transform:uppercase;transition:background 0.2s,border-color 0.2s;}
+    .btn-ghost:hover{background:rgba(255,255,255,0.12);border-color:rgba(255,255,255,0.9);}
+    .btn-gold{display:inline-block;background:linear-gradient(135deg,#956E46,#B8884F);color:#fff;padding:0.78rem 2rem;border-radius:3px;font-family:'Roboto',sans-serif;font-weight:600;font-size:0.82rem;letter-spacing:0.13em;text-transform:uppercase;transition:opacity 0.2s,transform 0.2s;}
+    .btn-gold:hover{opacity:0.88;transform:translateY(-1px);}
+
+    .label{font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:600;letter-spacing:0.24em;text-transform:uppercase;color:#956E46;}
+    .label-light{color:rgba(212,169,106,0.85);}
+
+    .h-display{font-family:'Cormorant Garamond',serif;font-weight:500;color:#1E446A;line-height:1.1;}
+    .h-display-white{color:#fff;}
+
+    .offering-card{overflow:hidden;border-radius:2px;}
+    .offering-card .img-wrap{overflow:hidden;}
+    .offering-card img{transition:transform 0.5s cubic-bezier(.22,.68,0,1.2);}
+    .offering-card:hover img{transform:scale(1.07);}
+
+    .step-num{width:54px;height:54px;border-radius:50%;border:1.5px solid rgba(255,255,255,0.30);background:rgba(255,255,255,0.07);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:#fff;font-weight:500;margin:0 auto 1rem;}
+
+    #navbar{transition:box-shadow 0.3s ease,background 0.3s ease;}
+    .nav-scrolled{box-shadow:0 2px 32px rgba(30,68,106,0.11);}
+
+    .stat-card{border-top:2px solid #956E46;}
+    .badge-float{backdrop-filter:blur(14px);background:rgba(255,255,255,0.93);}
+    .vignette::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,transparent 40%,rgba(0,0,0,0.32) 100%);pointer-events:none;}
+
+    .field{width:100%;border:1px solid rgba(16,37,57,0.14);border-radius:2px;padding:0.85rem 1rem;font-family:'DM Sans',sans-serif;font-size:0.93rem;color:#102539;background:#fff;transition:border-color 0.2s,box-shadow 0.2s;outline:none;}
+    .field:focus{border-color:#367BBE;box-shadow:0 0 0 3px rgba(54,123,190,0.12);}
+    .field::placeholder{color:rgba(16,37,57,0.32);}
+
+    .gold-line{border-color:rgba(149,110,70,0.22);}
+
+    .accordion-body{max-height:0;overflow:hidden;transition:max-height 0.35s ease,padding 0.25s ease;}
+    .accordion-body.open{max-height:400px;}
+
+    /* Subtle section separator */
+    .sep{width:100%;height:1px;background:linear-gradient(to right,transparent,rgba(149,110,70,0.2),transparent);}
+
+    /* Testimonial quote mark */
+    .quote-mark{font-family:'Cormorant Garamond',serif;font-size:5rem;line-height:0.8;color:rgba(149,110,70,0.18);font-weight:600;}
+
+    /* Feature pill */
+    .pill{display:inline-flex;align-items:center;gap:6px;background:rgba(30,68,106,0.07);border:1px solid rgba(30,68,106,0.12);border-radius:100px;padding:5px 14px;font-family:'DM Sans',sans-serif;font-size:0.76rem;font-weight:500;color:#1E446A;}
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════
+     NAVIGATION
+══════════════════════════════════════ -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm">
+  <div class="max-w-7xl mx-auto px-8 py-[14px] flex items-center justify-between">
+    <a href="#" class="flex items-center" style="text-decoration:none;">
+      <!-- MINDKRAFT FARM VENTURE — The Luxury Stacked (navbar adaptation) -->
+      <svg width="224" height="60" viewBox="0 0 224 60" xmlns="http://www.w3.org/2000/svg" style="display:block;flex-shrink:0;">
+        <!-- Top rule trio: thin · thick · thin -->
+        <line x1="0"   y1="3"  x2="224" y2="3"  stroke="#956E46" stroke-width="0.6"/>
+        <line x1="0"   y1="7"  x2="224" y2="7"  stroke="#956E46" stroke-width="2.2"/>
+        <line x1="0"   y1="11" x2="224" y2="11" stroke="#956E46" stroke-width="0.6"/>
+        <!-- Main wordmark -->
+        <text x="112" y="35" font-family="'Roboto',sans-serif" font-weight="900" font-size="22" fill="#1E446A" text-anchor="middle" letter-spacing="5">MINDKRAFT</text>
+        <!-- Diamond ornament + flanking rules -->
+        <line x1="0"   y1="41" x2="99"  y2="41" stroke="#956E46" stroke-width="0.6" opacity="0.55"/>
+        <polygon points="112,37.5 115.5,41 112,44.5 108.5,41" fill="#956E46"/>
+        <line x1="125" y1="41" x2="224" y2="41" stroke="#956E46" stroke-width="0.6" opacity="0.55"/>
+        <!-- Subtitle -->
+        <text x="112" y="53" font-family="'Cormorant Garamond',serif" font-weight="500" font-size="10.5" fill="#956E46" text-anchor="middle" letter-spacing="7">FARM VENTURE</text>
+        <!-- Bottom rule trio: thin · thick · thin -->
+        <line x1="0"   y1="57" x2="224" y2="57" stroke="#956E46" stroke-width="0.6"/>
+        <line x1="0"   y1="61" x2="224" y2="61" stroke="#956E46" stroke-width="2.2"/>
+        <line x1="0"   y1="65" x2="224" y2="65" stroke="#956E46" stroke-width="0.6"/>
+      </svg>
+    </a>
+
+    <div class="hidden md:flex items-center gap-8">
+      <a href="#about" style="font-family:'DM Sans',sans-serif;font-size:0.83rem;font-weight:500;color:#102539;" class="hover:text-secondary transition-colors">About</a>
+      <a href="#offerings" style="font-family:'DM Sans',sans-serif;font-size:0.83rem;font-weight:500;color:#102539;" class="hover:text-secondary transition-colors">Products</a>
+      <a href="#process" style="font-family:'DM Sans',sans-serif;font-size:0.83rem;font-weight:500;color:#102539;" class="hover:text-secondary transition-colors">Our Process</a>
+      <a href="#quality" style="font-family:'DM Sans',sans-serif;font-size:0.83rem;font-weight:500;color:#102539;" class="hover:text-secondary transition-colors">Quality</a>
+      <a href="#buyers" style="font-family:'DM Sans',sans-serif;font-size:0.83rem;font-weight:500;color:#102539;" class="hover:text-secondary transition-colors">Who We Serve</a>
+      <a href="#contact" style="font-family:'DM Sans',sans-serif;font-size:0.83rem;font-weight:500;color:#102539;" class="hover:text-secondary transition-colors">Contact</a>
+    </div>
+
+    <a href="#contact" class="btn-primary hidden md:inline-block">Place an Order</a>
+
+    <button class="md:hidden" onclick="document.getElementById('mob').classList.toggle('hidden')">
+      <svg class="w-6 h-6" style="color:#1E446A;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+  <div id="mob" class="hidden md:hidden bg-white border-t gold-line px-8 pb-6">
+    <div class="flex flex-col gap-4 pt-5 text-sm">
+      <a href="#about" style="font-weight:500;color:#102539;">About</a>
+      <a href="#offerings" style="font-weight:500;color:#102539;">Products</a>
+      <a href="#process" style="font-weight:500;color:#102539;">Our Process</a>
+      <a href="#quality" style="font-weight:500;color:#102539;">Quality</a>
+      <a href="#buyers" style="font-weight:500;color:#102539;">Who We Serve</a>
+      <a href="#contact" style="font-weight:500;color:#102539;">Contact</a>
+      <a href="#contact" class="btn-primary text-center mt-2">Place an Order</a>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ══════════════════════════════════════
+     HERO
+══════════════════════════════════════ -->
+<section class="relative h-screen min-h-[660px] max-h-[980px] overflow-hidden">
+  <img src="https://images.unsplash.com/photo-1589922583749-6b8473a85048?w=1920&q=85&fit=crop&crop=center"
+       alt="MindKraft Farm white broiler chickens" class="absolute inset-0 w-full h-full object-cover" style="object-position:center 60%;"/>
+  <div class="hero-overlay absolute inset-0"></div>
+  <div class="absolute bottom-0 left-0 right-0 h-36 z-10 pointer-events-none"
+       style="background:linear-gradient(to top,#FDF7EC 0%,transparent 100%);"></div>
+
+  <div class="relative z-20 h-full flex items-center">
+    <div class="max-w-7xl mx-auto px-8 w-full pt-24">
+      <div class="max-w-[600px]">
+        <p class="label label-light mb-5" style="letter-spacing:0.28em;">Osogbo · Osun State · Nigeria</p>
+        <h1 class="h-display h-display-white mb-6" style="font-size:clamp(3rem,6.5vw,5.5rem);">
+          Your Trusted<br/>
+          <em style="font-style:italic;color:#D4A96A;">Premium Broiler</em><br/>
+          Chicken Partner
+        </h1>
+        <p style="color:rgba(253,247,236,0.78);font-size:1rem;line-height:1.85;max-width:500px;" class="mb-5">
+          MindKraft Farm Venture produces farm-raised broiler chickens under strict veterinary protocols across consistent 6-week cycles. We supply households, caterers, restaurants, and wholesale distributors across Osogbo and Osun State with reliably fresh, high-quality poultry — every batch, every time.
+        </p>
+        <div class="flex flex-wrap gap-4 mt-8">
+          <a href="#offerings" class="btn-primary">Explore Our Products</a>
+          <a href="#about" class="btn-ghost">Discover Our Story</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero KPIs -->
+  <div class="absolute bottom-16 right-10 z-20 hidden lg:flex gap-3">
+    <div class="badge-float rounded-sm px-5 py-4 text-center" style="min-width:104px;">
+      <div style="font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:600;color:#1E446A;line-height:1;">Fresh</div>
+      <div style="font-size:0.62rem;letter-spacing:0.14em;color:#956E46;text-transform:uppercase;margin-top:3px;">Every Harvest</div>
+    </div>
+    <div class="badge-float rounded-sm px-5 py-4 text-center" style="min-width:104px;">
+      <div style="font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:600;color:#1E446A;line-height:1;">6 Wk</div>
+      <div style="font-size:0.62rem;letter-spacing:0.14em;color:#956E46;text-transform:uppercase;margin-top:3px;">Cycle Length</div>
+    </div>
+    <div class="badge-float rounded-sm px-5 py-4 text-center" style="min-width:104px;">
+      <div style="font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:600;color:#1E446A;line-height:1;">2.2<span style="font-size:1.1rem;">kg</span></div>
+      <div style="font-size:0.62rem;letter-spacing:0.14em;color:#956E46;text-transform:uppercase;margin-top:3px;">Avg. Bird Weight</div>
+    </div>
+    <div class="badge-float rounded-sm px-5 py-4 text-center" style="min-width:104px;">
+      <div style="font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:600;color:#1E446A;line-height:1;">8×</div>
+      <div style="font-size:0.62rem;letter-spacing:0.14em;color:#956E46;text-transform:uppercase;margin-top:3px;">Cycles per Year</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     INTRO STRIP
+══════════════════════════════════════ -->
+<section class="bg-primary py-10 px-6">
+  <div class="max-w-7xl mx-auto flex flex-wrap justify-center gap-x-16 gap-y-5">
+    <div class="flex items-center gap-3">
+      <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="#D4A96A" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+      <span style="font-family:'DM Sans',sans-serif;font-size:0.84rem;font-weight:500;color:rgba(255,255,255,0.80);letter-spacing:0.04em;">Farm-Direct Freshness — Zero Cold Chain Delay</span>
+    </div>
+    <div class="flex items-center gap-3">
+      <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="#D4A96A" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+      <span style="font-family:'DM Sans',sans-serif;font-size:0.84rem;font-weight:500;color:rgba(255,255,255,0.80);letter-spacing:0.04em;">Full Veterinary & Vaccination Programme</span>
+    </div>
+    <div class="flex items-center gap-3">
+      <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="#D4A96A" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+      <span style="font-family:'DM Sans',sans-serif;font-size:0.84rem;font-weight:500;color:rgba(255,255,255,0.80);letter-spacing:0.04em;">Consistent Year-Round Availability — 8 Cycles Annually</span>
+    </div>
+    <div class="flex items-center gap-3">
+      <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="#D4A96A" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+      <span style="font-family:'DM Sans',sans-serif;font-size:0.84rem;font-weight:500;color:rgba(255,255,255,0.80);letter-spacing:0.04em;">Retail, Restaurant & Wholesale Supply</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     ABOUT — OUR STORY
+══════════════════════════════════════ -->
+<section id="about" class="bg-accent py-28 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-16 items-center">
+
+      <div class="relative vignette">
+        <img src="https://images.unsplash.com/photo-1589922585952-b31ed31b2c92?w=1200&q=85&fit=crop&crop=center"
+             alt="MindKraft Farm white broiler chickens in farm enclosure" class="w-full object-cover rounded-sm shadow-2xl" style="height:500px;object-position:center 60%;"/>
+        <div class="absolute -bottom-7 -right-7 hidden md:block"
+             style="background:#1E446A;padding:1.8rem 2.2rem;border-radius:2px;box-shadow:0 12px 32px rgba(14,33,48,0.35);">
+          <div style="font-family:'Cormorant Garamond',serif;font-size:2.6rem;font-weight:500;color:#D4A96A;line-height:1;">8×</div>
+          <div style="font-family:'DM Sans',sans-serif;font-size:0.66rem;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.65);margin-top:5px;">Production<br/>Cycles / Year</div>
+        </div>
+        <div class="absolute -top-3 -left-3 w-24 h-24 hidden md:block"
+             style="border-top:2px solid #956E46;border-left:2px solid #956E46;"></div>
+      </div>
+
+      <div>
+        <p class="label mb-4">Our Story</p>
+        <div class="divider-gold mb-7"></div>
+        <h2 class="h-display mb-7 leading-tight" style="font-size:clamp(2.4rem,4.5vw,3.5rem);">
+          Built on a Vision of<br/>
+          <em style="color:#956E46;">Agribusiness Excellence</em>
+        </h2>
+
+        <p style="color:rgba(16,37,57,0.70);line-height:1.9;font-size:0.96rem;margin-bottom:1.2rem;">
+          MindKraft Farm Venture was founded with a clear conviction: that Osun State deserves a professional, reliable, and ethically managed poultry supply chain. Nestled in Osogbo — the capital of Osun State — our farm sits at the heart of one of Nigeria's most vibrant regional food economies, serving a growing population with rising demand for quality protein.
+        </p>
+        <p style="color:rgba(16,37,57,0.70);line-height:1.9;font-size:0.96rem;margin-bottom:1.2rem;">
+          We specialise in premium Arbor Acres and Cobb 500 broiler breeds, raised over a disciplined 6-week cycle and harvested at an ideal weight of 2.2 kg per bird. Our production model is designed for reliability — running multiple cycles per year means our customers can count on fresh birds arriving at regular, predictable intervals, eliminating the supply gaps that plague informal poultry chains.
+        </p>
+        <p style="color:rgba(16,37,57,0.70);line-height:1.9;font-size:0.96rem;margin-bottom:2rem;">
+          With a dedicated on-site borehole, professional brooding infrastructure, a fully equipped chicken house, and a team of trained farm workers supervised by an experienced Farm Manager, MindKraft is built to scale. Every decision — from sourcing day-old chicks to final-mile delivery — is made with quality, food safety, and your satisfaction as the guiding standard.
+        </p>
+
+        <div class="flex flex-wrap gap-2 mb-8">
+          <span class="pill">Arbor Acres & Cobb 500 breeds</span>
+          <span class="pill">On-site borehole water supply</span>
+          <span class="pill">Professional brooding facility</span>
+          <span class="pill">Dedicated Farm Manager</span>
+          <span class="pill">Launching May 2026</span>
+        </div>
+
+        <a href="#contact" class="btn-primary">Start a Conversation</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- sep -->
+<div class="sep"></div>
+
+<!-- ══════════════════════════════════════
+     OUR MISSION & VALUES
+══════════════════════════════════════ -->
+<section class="bg-accent py-20 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-14">
+      <p class="label mb-4">What Drives Us</p>
+      <div class="divider-gold mx-auto mb-7"></div>
+      <h2 class="h-display mx-auto" style="font-size:clamp(2rem,4vw,3.2rem);max-width:700px;">
+        Our Mission, Our <em style="color:#956E46;">Values</em>
+      </h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white rounded-sm p-8 card-hover" style="box-shadow:0 4px 24px rgba(30,68,106,0.07);">
+        <div class="w-12 h-12 rounded-full flex items-center justify-center mb-5" style="background:rgba(30,68,106,0.08);">
+          <svg class="w-6 h-6" fill="none" stroke="#1E446A" stroke-width="1.6" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+          </svg>
+        </div>
+        <h3 class="h-display text-2xl mb-3">Quality Without Compromise</h3>
+        <p style="color:rgba(16,37,57,0.62);font-size:0.88rem;line-height:1.85;">
+          Every bird we raise goes through a disciplined feed programme, full vaccination schedule, and daily welfare monitoring. We never cut corners on biosecurity or animal health — because the quality of what you eat starts with the integrity of how we farm.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-sm p-8 card-hover" style="box-shadow:0 4px 24px rgba(30,68,106,0.07);">
+        <div class="w-12 h-12 rounded-full flex items-center justify-center mb-5" style="background:rgba(30,68,106,0.08);">
+          <svg class="w-6 h-6" fill="none" stroke="#1E446A" stroke-width="1.6" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+          </svg>
+        </div>
+        <h3 class="h-display text-2xl mb-3">Reliability You Can Build On</h3>
+        <p style="color:rgba(16,37,57,0.62);font-size:0.88rem;line-height:1.85;">
+          Supply inconsistency is one of the greatest challenges in Nigeria's poultry market. MindKraft is structured for predictability — with 8 production cycles per year and meticulous cycle planning, our buyers can schedule orders in advance and trust that supply will arrive when promised.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-sm p-8 card-hover" style="box-shadow:0 4px 24px rgba(30,68,106,0.07);">
+        <div class="w-12 h-12 rounded-full flex items-center justify-center mb-5" style="background:rgba(30,68,106,0.08);">
+          <svg class="w-6 h-6" fill="none" stroke="#1E446A" stroke-width="1.6" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/>
+          </svg>
+        </div>
+        <h3 class="h-display text-2xl mb-3">Rooted in the Community</h3>
+        <p style="color:rgba(16,37,57,0.62);font-size:0.88rem;line-height:1.85;">
+          We are an Osogbo business, employing Osun State workers and serving Osun State families. Our ambition is not just commercial — it is to contribute meaningfully to food security and economic development in a region we call home. Supporting MindKraft means supporting a local agricultural future.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     PREMIER OFFERINGS
+══════════════════════════════════════ -->
+<section id="offerings" class="bg-white py-28 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-16 gap-6">
+      <div>
+        <p class="label mb-4">What We Offer</p>
+        <div class="divider-gold mb-7"></div>
+        <h2 class="h-display" style="font-size:clamp(2.2rem,4.5vw,3.5rem);">Our Premier<br/><em style="color:#956E46;">Offerings</em></h2>
+      </div>
+      <p style="color:rgba(16,37,57,0.58);max-width:380px;line-height:1.85;font-size:0.93rem;">
+        From live market-ready birds to hygienically dressed broilers and large-scale wholesale supply, MindKraft delivers the right product for every buyer — with the consistency and quality your business or household demands.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Card 1: Live Broilers -->
+      <div class="offering-card card-hover bg-accent rounded-sm" style="box-shadow:0 4px 24px rgba(30,68,106,0.07);">
+        <div class="img-wrap" style="height:270px;">
+          <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=800&q=82&fit=crop&crop=top"
+               alt="Live broiler chickens ready for market" class="w-full h-full object-cover"/>
+        </div>
+        <div class="p-7">
+          <p class="label mb-2">Live Birds</p>
+          <h3 class="h-display text-3xl mb-4">Live Broilers</h3>
+          <p style="color:rgba(16,37,57,0.65);font-size:0.88rem;line-height:1.85;margin-bottom:1rem;">
+            Our market-ready live broilers are harvested at exactly 6 weeks, averaging 2.2 kg per bird — the sweet spot for maximum yield and optimal tenderness. Birds are healthy, well-nourished, and available for collection at the farm gate or delivered directly to your market stall, poultry outlet, or processing facility.
+          </p>
+          <ul style="font-size:0.82rem;color:rgba(16,37,57,0.55);line-height:2;margin-bottom:1.2rem;padding-left:0;list-style:none;">
+            <li>✓ &nbsp;Avg. weight: 2.0 – 2.4 kg per bird</li>
+            <li>✓ &nbsp;No minimum order — any quantity welcome</li>
+            <li>✓ &nbsp;Pickup available at farm gate, Osogbo</li>
+            <li>✓ &nbsp;Delivery within Osun State (bulk)</li>
+          </ul>
+          <a href="#contact" class="inline-flex items-center gap-2" style="font-family:'DM Sans',sans-serif;font-weight:600;font-size:0.80rem;letter-spacing:0.08em;text-transform:uppercase;color:#956E46;">
+            Enquire Now
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 2: Dressed Chicken -->
+      <div class="offering-card card-hover bg-accent rounded-sm" style="box-shadow:0 4px 24px rgba(30,68,106,0.07);">
+        <div class="img-wrap" style="height:270px;">
+          <img src="https://images.unsplash.com/photo-1604503468506-a8da13d82791?w=800&q=82&fit=crop&crop=center"
+               alt="Fresh dressed chicken" class="w-full h-full object-cover"/>
+        </div>
+        <div class="p-7">
+          <p class="label mb-2">Processed</p>
+          <h3 class="h-display text-3xl mb-4">Dressed Chicken</h3>
+          <p style="color:rgba(16,37,57,0.65);font-size:0.88rem;line-height:1.85;margin-bottom:1rem;">
+            For buyers who want a ready-to-cook product, we offer freshly slaughtered and dressed broilers processed under hygienic conditions on harvest day. Dressed birds are cleaned, eviscerated, and prepared to your specification — whole bird or split — making them ideal for restaurants, hotels, event caterers, and retail households.
+          </p>
+          <ul style="font-size:0.82rem;color:rgba(16,37,57,0.55);line-height:2;margin-bottom:1.2rem;padding-left:0;list-style:none;">
+            <li>✓ &nbsp;Slaughtered and dressed same day</li>
+            <li>✓ &nbsp;Whole bird, split, or quartered</li>
+            <li>✓ &nbsp;Available for caterers & restaurants</li>
+            <li>✓ &nbsp;No minimum order — any quantity welcome</li>
+          </ul>
+          <a href="#contact" class="inline-flex items-center gap-2" style="font-family:'DM Sans',sans-serif;font-weight:600;font-size:0.80rem;letter-spacing:0.08em;text-transform:uppercase;color:#956E46;">
+            Enquire Now
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 3: Bulk / Wholesale — REPLACED IMAGE -->
+      <div class="offering-card card-hover bg-accent rounded-sm" style="box-shadow:0 4px 24px rgba(30,68,106,0.07);">
+        <div class="img-wrap" style="height:270px;">
+          <img src="https://images.unsplash.com/photo-1764857078450-5c2763876309?w=800&q=85&fit=crop&crop=center"
+               alt="Premium white broiler chickens close-up" class="w-full h-full object-cover" style="object-position:center 30%;"/>
+        </div>
+        <div class="p-7">
+          <p class="label mb-2">Commercial Supply</p>
+          <h3 class="h-display text-3xl mb-4">Bulk &amp; Wholesale</h3>
+          <p style="color:rgba(16,37,57,0.65);font-size:0.88rem;line-height:1.85;margin-bottom:1rem;">
+            MindKraft is structured to serve commercial buyers who require large, consistent quantities of poultry. We partner with supermarkets, cold store operators, hotels, large-scale caterers, and foodservice distributors seeking a dependable local farm source. Bulk pricing is available, and supply schedules can be aligned to your operational calendar.
+          </p>
+          <ul style="font-size:0.82rem;color:rgba(16,37,57,0.55);line-height:2;margin-bottom:1.2rem;padding-left:0;list-style:none;">
+            <li>✓ &nbsp;Up to 2,000 birds available per harvest</li>
+            <li>✓ &nbsp;Negotiated pricing for standing orders</li>
+            <li>✓ &nbsp;Supply schedule aligned to your needs</li>
+            <li>✓ &nbsp;Delivery within Osun State</li>
+          </ul>
+          <a href="#contact" class="inline-flex items-center gap-2" style="font-family:'DM Sans',sans-serif;font-weight:600;font-size:0.80rem;letter-spacing:0.08em;text-transform:uppercase;color:#956E46;">
+            Enquire Now
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     PROCESS — FULL-BLEED DARK SECTION
+══════════════════════════════════════ -->
+<section id="process" class="relative">
+  <div class="relative overflow-hidden" style="height:500px;">
+    <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=1920&q=85&fit=crop&crop=top"
+         alt="Broiler chicken farm operations" class="absolute inset-0 w-full h-full object-cover" style="filter:brightness(0.35);object-position:center 20%;"/>
+    <div class="relative z-10 h-full flex items-center justify-center text-center px-6">
+      <div>
+        <p class="label label-light mb-5">How We Operate</p>
+        <h2 class="h-display h-display-white mb-6" style="font-size:clamp(2.6rem,5.5vw,4.5rem);">
+          From Day-Old Chick<br/>
+          <em style="color:#D4A96A;">to Your Table</em>
+        </h2>
+        <p style="color:rgba(255,255,255,0.68);max-width:560px;margin:0 auto;line-height:1.85;font-size:0.96rem;">
+          Every bird at MindKraft Farm passes through a precise, supervised 6-week production cycle. Strict biosecurity, optimised nutrition, and daily health monitoring ensure that only the highest-quality broilers reach our buyers. Here is exactly how we do it.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Steps strip -->
+  <div style="background:#102539;" class="py-16 px-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div>
+        <div class="step-num">1</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:#fff;margin-bottom:8px;font-weight:500;">Procurement</div>
+        <div style="font-size:0.82rem;color:rgba(255,255,255,0.48);line-height:1.8;">Certified day-old chicks (DOCs) are sourced from licensed, disease-free commercial hatcheries. Each batch is inspected on arrival for health and uniformity before entering the facility.</div>
+      </div>
+      <div>
+        <div class="step-num">2</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:#fff;margin-bottom:8px;font-weight:500;">Brooding Phase</div>
+        <div style="font-size:0.82rem;color:rgba(255,255,255,0.48);line-height:1.8;">Weeks 1–2: Chicks are placed in a temperature-regulated brooding area (32–35°C, reducing weekly). Electric brooders and drinkers ensure warmth, hydration, and early nutritional uptake — critical for uniform growth.</div>
+      </div>
+      <div>
+        <div class="step-num">3</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:#fff;margin-bottom:8px;font-weight:500;">Growth & Health</div>
+        <div style="font-size:0.82rem;color:rgba(255,255,255,0.48);line-height:1.8;">Weeks 3–6: Birds receive graded feed (starter → grower → finisher). Full vaccine protocols — Newcastle Disease, Gumboro, and IBD — are administered by schedule. Daily welfare checks are logged.</div>
+      </div>
+      <div>
+        <div class="step-num">4</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:#fff;margin-bottom:8px;font-weight:500;">Harvest & Dispatch</div>
+        <div style="font-size:0.82rem;color:rgba(255,255,255,0.48);line-height:1.8;">At week 6, birds averaging 2.2 kg are harvested. Live birds are available for collection; dressed orders are processed same day. Dispatch is coordinated with buyers to ensure freshness on arrival.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     STATS
+══════════════════════════════════════ -->
+<section class="bg-accent-2 py-24 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-14">
+      <p class="label mb-4">The Numbers Behind the Farm</p>
+      <div class="divider-gold mx-auto mb-7"></div>
+      <h2 class="h-display" style="font-size:clamp(2rem,4vw,3.2rem);">Performance That<br/><em style="color:#956E46;">Speaks for Itself</em></h2>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="stat-card card-hover bg-white p-8 text-center rounded-sm" style="box-shadow:0 4px 24px rgba(30,68,106,0.06);">
+        <div class="h-display" style="font-size:3rem;color:#1E446A;margin-bottom:6px;">Farm<br/>Fresh</div>
+        <div style="font-family:'DM Sans',sans-serif;font-weight:600;font-size:0.76rem;letter-spacing:0.12em;text-transform:uppercase;color:#956E46;">Every Harvest</div>
+        <div style="font-size:0.78rem;color:rgba(16,37,57,0.42);margin-top:5px;line-height:1.5;">Birds harvested and dispatched the same day — no cold-store delay</div>
+      </div>
+      <div class="stat-card card-hover bg-white p-8 text-center rounded-sm" style="box-shadow:0 4px 24px rgba(30,68,106,0.06);">
+        <div class="h-display" style="font-size:3rem;color:#1E446A;margin-bottom:6px;">Year-<br/>Round</div>
+        <div style="font-family:'DM Sans',sans-serif;font-weight:600;font-size:0.76rem;letter-spacing:0.12em;text-transform:uppercase;color:#956E46;">Availability</div>
+        <div style="font-size:0.78rem;color:rgba(16,37,57,0.42);margin-top:5px;line-height:1.5;">Continuous supply across multiple harvests annually</div>
+      </div>
+      <div class="stat-card card-hover bg-white p-8 text-center rounded-sm" style="box-shadow:0 4px 24px rgba(30,68,106,0.06);">
+        <div class="h-display" style="font-size:3rem;color:#1E446A;margin-bottom:6px;">100%<br/>Local</div>
+        <div style="font-family:'DM Sans',sans-serif;font-weight:600;font-size:0.76rem;letter-spacing:0.12em;text-transform:uppercase;color:#956E46;">Farm Direct</div>
+        <div style="font-size:0.78rem;color:rgba(16,37,57,0.42);margin-top:5px;line-height:1.5;">Osogbo-based — buy direct from the farm, no middlemen</div>
+      </div>
+      <div class="stat-card card-hover bg-white p-8 text-center rounded-sm" style="box-shadow:0 4px 24px rgba(30,68,106,0.06);">
+        <div class="h-display" style="font-size:3.5rem;color:#1E446A;margin-bottom:6px;">2.2<span style="font-size:1.8rem;">kg</span></div>
+        <div style="font-family:'DM Sans',sans-serif;font-weight:600;font-size:0.76rem;letter-spacing:0.12em;text-transform:uppercase;color:#956E46;">Avg. Bird Weight</div>
+        <div style="font-size:0.78rem;color:rgba(16,37,57,0.42);margin-top:5px;line-height:1.5;">Optimum tenderness & market value</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     QUALITY & CERTIFICATIONS
+══════════════════════════════════════ -->
+<section id="quality" class="bg-accent py-28 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-16 items-start">
+      <div>
+        <p class="label mb-4">Standards &amp; Quality Assurance</p>
+        <div class="divider-gold mb-7"></div>
+        <h2 class="h-display mb-7 leading-tight" style="font-size:clamp(2.2rem,4vw,3.3rem);">
+          Committed to<br/>
+          <em style="color:#956E46;">Food Safety</em><br/>
+          at Every Stage
+        </h2>
+        <p style="color:rgba(16,37,57,0.65);line-height:1.9;font-size:0.95rem;margin-bottom:1rem;">
+          At MindKraft, food safety is not a compliance checkbox — it is a core operating principle. From the day chicks arrive to the moment birds are dispatched, every step is governed by documented protocols designed to ensure the birds reaching your household or business are wholesome, safe, and free from preventable disease.
+        </p>
+        <p style="color:rgba(16,37,57,0.65);line-height:1.9;font-size:0.95rem;margin-bottom:2rem;">
+          Our veterinary programme is managed in partnership with a qualified animal health practitioner who oversees all disease prevention and treatment decisions. No antibiotics are administered without professional direction, and no bird is harvested within the withdrawal period of any drug.
+        </p>
+
+        <div class="space-y-4">
+          <div class="flex items-start gap-5 bg-white p-5 rounded-sm" style="box-shadow:0 2px 16px rgba(30,68,106,0.05);">
+            <div class="w-11 h-11 rounded-full flex items-center justify-center flex-shrink-0" style="background:rgba(54,123,190,0.09);">
+              <svg class="w-5 h-5" fill="none" stroke="#367BBE" stroke-width="1.7" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <div>
+              <div style="font-family:'Roboto',sans-serif;font-weight:600;font-size:0.88rem;color:#1E446A;margin-bottom:5px;">Full Vaccination Programme</div>
+              <div style="font-size:0.82rem;color:rgba(16,37,57,0.55);line-height:1.75;">Newcastle Disease Virus (NDV), Infectious Bursal Disease (Gumboro), and Infectious Bronchitis vaccines are administered to schedule every cycle. Records are maintained per batch.</div>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-5 bg-white p-5 rounded-sm" style="box-shadow:0 2px 16px rgba(30,68,106,0.05);">
+            <div class="w-11 h-11 rounded-full flex items-center justify-center flex-shrink-0" style="background:rgba(54,123,190,0.09);">
+              <svg class="w-5 h-5" fill="none" stroke="#367BBE" stroke-width="1.7" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+            </div>
+            <div>
+              <div style="font-family:'Roboto',sans-serif;font-weight:600;font-size:0.88rem;color:#1E446A;margin-bottom:5px;">Independent Borehole Water Supply</div>
+              <div style="font-size:0.82rem;color:rgba(16,37,57,0.55);line-height:1.75;">Our on-site borehole provides clean, uncontaminated water through a dedicated 500-litre overhead tank. Birds never rely on public water supply — maintaining consistent hydration and reducing the risk of waterborne pathogens.</div>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-5 bg-white p-5 rounded-sm" style="box-shadow:0 2px 16px rgba(30,68,106,0.05);">
+            <div class="w-11 h-11 rounded-full flex items-center justify-center flex-shrink-0" style="background:rgba(54,123,190,0.09);">
+              <svg class="w-5 h-5" fill="none" stroke="#367BBE" stroke-width="1.7" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+            </div>
+            <div>
+              <div style="font-family:'Roboto',sans-serif;font-weight:600;font-size:0.88rem;color:#1E446A;margin-bottom:5px;">Graded Feed Programme</div>
+              <div style="font-size:0.82rem;color:rgba(16,37,57,0.55);line-height:1.75;">Birds receive appropriately phased feeds — starter (weeks 1–2), grower (weeks 3–4), and finisher (weeks 5–6) — totalling 104 bags per cycle from reputable manufacturers. Feed conversion efficiency is monitored weekly.</div>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-5 bg-white p-5 rounded-sm" style="box-shadow:0 2px 16px rgba(30,68,106,0.05);">
+            <div class="w-11 h-11 rounded-full flex items-center justify-center flex-shrink-0" style="background:rgba(54,123,190,0.09);">
+              <svg class="w-5 h-5" fill="none" stroke="#367BBE" stroke-width="1.7" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <div>
+              <div style="font-family:'Roboto',sans-serif;font-weight:600;font-size:0.88rem;color:#1E446A;margin-bottom:5px;">Professional, Trained Farm Team</div>
+              <div style="font-size:0.82rem;color:rgba(16,37,57,0.55);line-height:1.75;">Our Head of Operations, Farm Manager, and Labour Worker follow written Standard Operating Procedures (SOPs) for every aspect of farm management — from litter management and biosecurity to daily feed and mortality logging.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <img src="https://images.unsplash.com/photo-1648141499381-50584544f21c?w=1200&q=85&fit=crop&crop=top"
+             alt="White broiler chickens in a professional farm facility" class="w-full object-cover rounded-sm shadow-2xl" style="height:520px;object-position:center 25%;"/>
+        <div class="absolute -bottom-4 -left-4 hidden md:block"
+             style="width:80px;height:80px;border-bottom:2px solid #956E46;border-left:2px solid #956E46;"></div>
+        <div class="absolute top-8 right-8 badge-float rounded-sm p-5 text-center">
+          <div style="font-family:'DM Sans',sans-serif;font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:#956E46;margin-bottom:5px;">Launching</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:600;color:#1E446A;line-height:1;">May 2026</div>
+          <div style="font-size:0.68rem;color:rgba(16,37,57,0.45);margin-top:4px;">Osogbo, Osun State</div>
+        </div>
+
+        <!-- Infrastructure list -->
+        <div class="mt-6 bg-white rounded-sm p-6" style="box-shadow:0 4px 20px rgba(30,68,106,0.07);">
+          <div style="font-family:'Roboto',sans-serif;font-weight:600;font-size:0.84rem;color:#1E446A;margin-bottom:12px;letter-spacing:0.04em;">Farm Infrastructure</div>
+          <div class="grid grid-cols-2 gap-3">
+            <div style="font-size:0.80rem;color:rgba(16,37,57,0.60);">🔹 Borehole &amp; Water Tank (500L)</div>
+            <div style="font-size:0.80rem;color:rgba(16,37,57,0.60);">🔹 Electric Brooder System</div>
+            <div style="font-size:0.80rem;color:rgba(16,37,57,0.60);">🔹 LED Lighting System</div>
+            <div style="font-size:0.80rem;color:rgba(16,37,57,0.60);">🔹 2,000-capacity Feeders</div>
+            <div style="font-size:0.80rem;color:rgba(16,37,57,0.60);">🔹 2,000-capacity Drinkers</div>
+            <div style="font-size:0.80rem;color:rgba(16,37,57,0.60);">🔹 Pen Partitions &amp; Bedding</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     WHO WE SERVE
+══════════════════════════════════════ -->
+<section id="buyers" class="bg-white py-28 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+      <p class="label mb-4">Our Customers</p>
+      <div class="divider-gold mx-auto mb-7"></div>
+      <h2 class="h-display" style="font-size:clamp(2rem,4vw,3.2rem);">Who We <em style="color:#956E46;">Serve</em></h2>
+      <p style="color:rgba(16,37,57,0.55);max-width:520px;margin:1rem auto 0;line-height:1.85;font-size:0.95rem;">
+        MindKraft poultry reaches kitchens, markets, and businesses across Osogbo and Osun State. Here are the buyers we are built to serve.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-accent rounded-sm p-7 card-hover" style="box-shadow:0 4px 20px rgba(30,68,106,0.06);">
+        <div class="w-12 h-12 rounded-full flex items-center justify-center mb-5" style="background:rgba(30,68,106,0.08);">
+          <svg class="w-6 h-6" fill="none" stroke="#1E446A" stroke-width="1.6" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+        </div>
+        <h4 class="h-display text-2xl mb-3">Households</h4>
+        <p style="font-size:0.85rem;color:rgba(16,37,57,0.60);line-height:1.8;">Families and individuals seeking fresh, farm-direct chicken for daily cooking. We offer single-bird retail and small bundle orders for direct household purchase.</p>
+      </div>
+
+      <div class="bg-accent rounded-sm p-7 card-hover" style="box-shadow:0 4px 20px rgba(30,68,106,0.06);">
+        <div class="w-12 h-12 rounded-full flex items-center justify-center mb-5" style="background:rgba(30,68,106,0.08);">
+          <svg class="w-6 h-6" fill="none" stroke="#1E446A" stroke-width="1.6" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <h4 class="h-display text-2xl mb-3">Restaurants &amp; Hotels</h4>
+        <p style="font-size:0.85rem;color:rgba(16,37,57,0.60);line-height:1.8;">Food service businesses that need reliable, fresh poultry on a regular schedule. We offer consistent quality and flexible order sizing aligned to your kitchen's weekly menu requirements.</p>
+      </div>
+
+      <div class="bg-accent rounded-sm p-7 card-hover" style="box-shadow:0 4px 20px rgba(30,68,106,0.06);">
+        <div class="w-12 h-12 rounded-full flex items-center justify-center mb-5" style="background:rgba(30,68,106,0.08);">
+          <svg class="w-6 h-6" fill="none" stroke="#1E446A" stroke-width="1.6" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"/></svg>
+        </div>
+        <h4 class="h-display text-2xl mb-3">Event Caterers</h4>
+        <p style="font-size:0.85rem;color:rgba(16,37,57,0.60);line-height:1.8;">Owambes, corporate events, weddings, and parties rely on large, single-day poultry orders. We work with event caterers to plan supply well in advance, ensuring your event order is ready when you need it.</p>
+      </div>
+
+      <div class="bg-accent rounded-sm p-7 card-hover" style="box-shadow:0 4px 20px rgba(30,68,106,0.06);">
+        <div class="w-12 h-12 rounded-full flex items-center justify-center mb-5" style="background:rgba(30,68,106,0.08);">
+          <svg class="w-6 h-6" fill="none" stroke="#1E446A" stroke-width="1.6" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"/></svg>
+        </div>
+        <h4 class="h-display text-2xl mb-3">Wholesale Traders</h4>
+        <p style="font-size:0.85rem;color:rgba(16,37,57,0.60);line-height:1.8;">Market traders, cold store operators, and poultry distributors who source live or dressed birds in volume. We offer standing-order pricing for commercial buyers who commit to regular, large-quantity purchases.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     DARK CTA / BRAND STATEMENT
+══════════════════════════════════════ -->
+<section style="background:#0E2130;" class="py-28 px-6 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto relative z-10">
+    <div class="grid md:grid-cols-2 gap-16 items-center">
+      <div>
+        <p class="label label-light mb-5">A Promise, Not Just a Product</p>
+        <div class="divider-gold mb-8"></div>
+        <h2 class="h-display h-display-white mb-7 leading-tight" style="font-size:clamp(2.4rem,5vw,4rem);">
+          Premium Quality.<br/>
+          Reliable Supply.<br/>
+          <em style="color:#D4A96A;">Directly from Our Farm.</em>
+        </h2>
+        <p style="color:rgba(255,255,255,0.60);font-size:0.96rem;line-height:1.9;margin-bottom:1.2rem;max-width:460px;">
+          In a market where inconsistency and informal supply chains are the norm, MindKraft Farm Venture offers something different — a professionally operated farm with the structure, discipline, and accountability of a modern agribusiness.
+        </p>
+        <p style="color:rgba(255,255,255,0.60);font-size:0.96rem;line-height:1.9;margin-bottom:2.5rem;max-width:460px;">
+          Whether you place a small household order or enter a commercial supply agreement, you will receive the same standard of care, the same farm-verified quality, and the same commitment to delivering exactly what we promised, when we promised it.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#contact" class="btn-gold">Place Your Order</a>
+          <a href="#about" class="btn-ghost">Learn More About Us</a>
+        </div>
+      </div>
+
+      <div class="relative">
+        <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=1200&q=85&fit=crop&crop=center"
+             alt="Fresh premium broiler chickens" class="w-full object-cover rounded-sm shadow-2xl" style="height:440px;object-position:center 30%;"/>
+        <div class="absolute -top-4 -right-4 hidden md:block"
+             style="width:72px;height:72px;border-top:2px solid #956E46;border-right:2px solid #956E46;"></div>
+        <div class="absolute bottom-7 left-7 badge-float rounded-sm px-6 py-4">
+          <div style="font-family:'DM Sans',sans-serif;font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:#956E46;margin-bottom:3px;">Launching</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:600;color:#1E446A;line-height:1.1;">May 2026</div>
+          <div style="font-size:0.72rem;color:rgba(16,37,57,0.45);margin-top:3px;">Osogbo · Osun State</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     FAQ
+══════════════════════════════════════ -->
+<section class="bg-accent py-24 px-6">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-14">
+      <p class="label mb-4">Common Questions</p>
+      <div class="divider-gold mx-auto mb-7"></div>
+      <h2 class="h-display" style="font-size:clamp(2rem,4vw,3.2rem);">Frequently Asked<br/><em style="color:#956E46;">Questions</em></h2>
+    </div>
+
+    <div class="space-y-3" id="faq">
+
+      <div class="bg-white rounded-sm overflow-hidden" style="box-shadow:0 2px 16px rgba(30,68,106,0.06);">
+        <button class="w-full text-left px-6 py-5 flex justify-between items-center" onclick="toggleFaq(this)">
+          <span style="font-family:'Roboto',sans-serif;font-weight:600;font-size:0.92rem;color:#1E446A;">When can I place my first order?</span>
+          <svg class="w-5 h-5 flex-shrink-0 transition-transform" style="color:#956E46;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="accordion-body px-6 pb-0">
+          <p style="font-size:0.88rem;color:rgba(16,37,57,0.62);line-height:1.85;padding-bottom:1.2rem;">MindKraft Farm Venture begins operations in May 2026. Our first harvest is scheduled approximately 6 weeks after we receive our opening batch of day-old chicks. You can register your interest now, and we will contact you with confirmed availability and pricing ahead of our first dispatch date. Pre-orders help us plan our supply accurately, so we encourage buyers to reach out early.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-sm overflow-hidden" style="box-shadow:0 2px 16px rgba(30,68,106,0.06);">
+        <button class="w-full text-left px-6 py-5 flex justify-between items-center" onclick="toggleFaq(this)">
+          <span style="font-family:'Roboto',sans-serif;font-weight:600;font-size:0.92rem;color:#1E446A;">Is there a minimum order quantity?</span>
+          <svg class="w-5 h-5 flex-shrink-0 transition-transform" style="color:#956E46;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="accordion-body px-6 pb-0">
+          <p style="font-size:0.88rem;color:rgba(16,37,57,0.62);line-height:1.85;padding-bottom:1.2rem;">There is no minimum order at MindKraft Farm Venture. Whether you need a single bird for your household or a large recurring supply for your business, we are happy to accommodate. Contact us to discuss your needs and we will work out the best arrangement for you.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-sm overflow-hidden" style="box-shadow:0 2px 16px rgba(30,68,106,0.06);">
+        <button class="w-full text-left px-6 py-5 flex justify-between items-center" onclick="toggleFaq(this)">
+          <span style="font-family:'Roboto',sans-serif;font-weight:600;font-size:0.92rem;color:#1E446A;">Do you deliver, or is it collection only?</span>
+          <svg class="w-5 h-5 flex-shrink-0 transition-transform" style="color:#956E46;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="accordion-body px-6 pb-0">
+          <p style="font-size:0.88rem;color:rgba(16,37,57,0.62);line-height:1.85;padding-bottom:1.2rem;">Farm-gate collection is always available in Osogbo. For bulk and wholesale orders, we coordinate delivery within Osun State at an agreed transportation cost. Retail and small household orders are typically collected. If you have specific delivery requirements, please include them when you contact us and we will do our best to accommodate you.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-sm overflow-hidden" style="box-shadow:0 2px 16px rgba(30,68,106,0.06);">
+        <button class="w-full text-left px-6 py-5 flex justify-between items-center" onclick="toggleFaq(this)">
+          <span style="font-family:'Roboto',sans-serif;font-weight:600;font-size:0.92rem;color:#1E446A;">How often do you have birds available?</span>
+          <svg class="w-5 h-5 flex-shrink-0 transition-transform" style="color:#956E46;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="accordion-body px-6 pb-0">
+          <p style="font-size:0.88rem;color:rgba(16,37,57,0.62);line-height:1.85;padding-bottom:1.2rem;">We run 8 production cycles per year, each 6 weeks long. This means a harvest approximately every 6–7 weeks. As our operation grows, we may introduce staggered batching to provide more continuous availability. We share our harvest calendar with registered buyers so you can plan your orders well in advance.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-sm overflow-hidden" style="box-shadow:0 2px 16px rgba(30,68,106,0.06);">
+        <button class="w-full text-left px-6 py-5 flex justify-between items-center" onclick="toggleFaq(this)">
+          <span style="font-family:'Roboto',sans-serif;font-weight:600;font-size:0.92rem;color:#1E446A;">Are your birds raised without hormones or harmful additives?</span>
+          <svg class="w-5 h-5 flex-shrink-0 transition-transform" style="color:#956E46;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="accordion-body px-6 pb-0">
+          <p style="font-size:0.88rem;color:rgba(16,37,57,0.62);line-height:1.85;padding-bottom:1.2rem;">Yes. MindKraft does not use growth hormones or unapproved feed additives. Our birds are raised on commercially formulated broiler feeds from reputable manufacturers — starter, grower, and finisher phases. Medication is only used when clinically necessary and under veterinary direction, with strict adherence to drug withdrawal periods before harvest.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-sm overflow-hidden" style="box-shadow:0 2px 16px rgba(30,68,106,0.06);">
+        <button class="w-full text-left px-6 py-5 flex justify-between items-center" onclick="toggleFaq(this)">
+          <span style="font-family:'Roboto',sans-serif;font-weight:600;font-size:0.92rem;color:#1E446A;">Can I visit the farm before placing an order?</span>
+          <svg class="w-5 h-5 flex-shrink-0 transition-transform" style="color:#956E46;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="accordion-body px-6 pb-0">
+          <p style="font-size:0.88rem;color:rgba(16,37,57,0.62);line-height:1.85;padding-bottom:1.2rem;">We welcome farm visits from serious buyers — particularly wholesale customers, caterers, and businesses considering a standing supply arrangement. Visits must be scheduled in advance to comply with our biosecurity protocols. Please contact us to arrange a suitable date and time. We are proud of our facility and happy to show you how we operate.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     CONTACT
+══════════════════════════════════════ -->
+<section id="contact" class="bg-white py-28 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+      <p class="label mb-4">Get in Touch</p>
+      <div class="divider-gold mx-auto mb-7"></div>
+      <h2 class="h-display" style="font-size:clamp(2rem,4vw,3.2rem);">Ready to Place an <em style="color:#956E46;">Order?</em></h2>
+      <p style="color:rgba(16,37,57,0.55);max-width:500px;margin:1rem auto 0;line-height:1.85;font-size:0.95rem;">
+        Whether you have a small household order, a recurring restaurant requirement, or a wholesale supply enquiry — we want to hear from you. Complete the form or reach us directly using the contact details below.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-14">
+
+      <!-- Info column -->
+      <div class="space-y-7">
+        <div class="flex items-start gap-5">
+          <div class="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0" style="background:linear-gradient(135deg,#1E446A,#2B649B);">
+            <svg class="w-5 h-5" fill="none" stroke="white" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <div>
+            <div style="font-family:'Roboto',sans-serif;font-weight:600;color:#1E446A;margin-bottom:4px;">Farm Location</div>
+            <div style="color:rgba(16,37,57,0.58);font-size:0.9rem;line-height:1.7;">Osogbo, Osun State, Nigeria<br/>Exact address provided on order confirmation.</div>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-5">
+          <div class="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0" style="background:linear-gradient(135deg,#1E446A,#2B649B);">
+            <svg class="w-5 h-5" fill="none" stroke="white" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          </div>
+          <div>
+            <div style="font-family:'Roboto',sans-serif;font-weight:600;color:#1E446A;margin-bottom:4px;">Phone &amp; WhatsApp</div>
+            <div style="color:rgba(16,37,57,0.58);font-size:0.9rem;line-height:1.7;">+234 — — — — — — — —<br/>WhatsApp preferred for quick responses.</div>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-5">
+          <div class="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0" style="background:linear-gradient(135deg,#1E446A,#2B649B);">
+            <svg class="w-5 h-5" fill="none" stroke="white" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </div>
+          <div>
+            <div style="font-family:'Roboto',sans-serif;font-weight:600;color:#1E446A;margin-bottom:4px;">Email</div>
+            <div style="color:rgba(16,37,57,0.58);font-size:0.9rem;">info@mindkraftfarm.com</div>
+          </div>
+        </div>
+
+        <div class="rounded-sm p-6" style="background:#FDF7EC;border-top:2px solid #956E46;box-shadow:0 2px 16px rgba(30,68,106,0.05);">
+          <div style="font-family:'Roboto',sans-serif;font-weight:600;color:#1E446A;margin-bottom:10px;">Operating Hours</div>
+          <div style="font-size:0.88rem;color:rgba(16,37,57,0.58);line-height:2.1;">
+            <div class="flex justify-between"><span>Monday – Saturday</span><span style="font-weight:500;color:#102539;">9:00 AM – 5:00 PM</span></div>
+            <div class="flex justify-between"><span>Sunday</span><span style="font-weight:500;color:#102539;">Closed</span></div>
+          </div>
+          <div style="margin-top:12px;font-size:0.80rem;color:rgba(16,37,57,0.45);line-height:1.6;">Orders received outside business hours will be acknowledged the next working morning. Urgent enquiries via WhatsApp are monitored into the evening.</div>
+        </div>
+
+        <img src="https://images.unsplash.com/photo-1589922583749-6b8473a85048?w=900&q=80&fit=crop&crop=center"
+             alt="Farm fresh chicken" class="w-full object-cover rounded-sm shadow-md" style="height:190px;"/>
+      </div>
+
+      <!-- Form -->
+      <div class="bg-white rounded-sm p-10" style="border:1px solid rgba(16,37,57,0.08);box-shadow:0 6px 36px rgba(30,68,106,0.09);">
+        <h3 class="h-display text-3xl mb-2">Send an <em style="color:#956E46;">Enquiry</em></h3>
+        <p style="font-size:0.83rem;color:rgba(16,37,57,0.48);margin-bottom:1.8rem;line-height:1.6;">We typically respond within 24 hours. For urgent orders, please also send a WhatsApp message.</p>
+        <form class="space-y-5" onsubmit="return false;">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label style="display:block;font-size:0.68rem;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;color:rgba(16,37,57,0.45);margin-bottom:8px;">Full Name *</label>
+              <input type="text" placeholder="e.g. Adebayo Okafor" class="field" required/>
+            </div>
+            <div>
+              <label style="display:block;font-size:0.68rem;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;color:rgba(16,37,57,0.45);margin-bottom:8px;">Phone / WhatsApp *</label>
+              <input type="tel" placeholder="+234 800 000 0000" class="field" required/>
+            </div>
+          </div>
+          <div>
+            <label style="display:block;font-size:0.68rem;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;color:rgba(16,37,57,0.45);margin-bottom:8px;">Email Address</label>
+            <input type="email" placeholder="your@email.com" class="field"/>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label style="display:block;font-size:0.68rem;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;color:rgba(16,37,57,0.45);margin-bottom:8px;">Buyer Type</label>
+              <select class="field">
+                <option value="">Select…</option>
+                <option>Household / Individual</option>
+                <option>Restaurant / Hotel</option>
+                <option>Event Caterer</option>
+                <option>Wholesale / Trader</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div>
+              <label style="display:block;font-size:0.68rem;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;color:rgba(16,37,57,0.45);margin-bottom:8px;">Order Type</label>
+              <select class="field">
+                <option value="">Select…</option>
+                <option>Live Broilers</option>
+                <option>Dressed Chicken</option>
+                <option>Bulk / Wholesale</option>
+                <option>Standing Supply Agreement</option>
+                <option>General Enquiry</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label style="display:block;font-size:0.68rem;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;color:rgba(16,37,57,0.45);margin-bottom:8px;">Estimated Quantity</label>
+            <input type="text" placeholder="e.g. 20 birds, 50 kg dressed, 300 birds weekly" class="field"/>
+          </div>
+          <div>
+            <label style="display:block;font-size:0.68rem;font-weight:600;letter-spacing:0.13em;text-transform:uppercase;color:rgba(16,37,57,0.45);margin-bottom:8px;">Message *</label>
+            <textarea rows="4" placeholder="Tell us about your requirements, delivery location, or any questions you have…" class="field" style="resize:none;" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width:100%;text-align:center;padding-top:1rem;padding-bottom:1rem;">Submit Enquiry</button>
+          <p style="font-size:0.75rem;color:rgba(16,37,57,0.38);text-align:center;line-height:1.6;">Your information is kept private and used only to respond to your enquiry.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     FOOTER
+══════════════════════════════════════ -->
+<footer style="background:#0E2130;" class="text-white py-16 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-12 gap-10 mb-12">
+
+      <!-- Brand — wider col -->
+      <div class="md:col-span-4">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center" style="background:linear-gradient(135deg,#367BBE,#2B649B);">
+            <svg viewBox="0 0 32 32" class="w-5 h-5 fill-white"><path d="M16 3C11 3 6 8 6 15c0 5.5 3.5 10 9 12v2h2v-2c5.5-2 9-6.5 9-12 0-7-5-12-10-12zm0 4c3.5 0 6 3.5 6 8s-2.5 8-6 8-6-3.5-6-8 2.5-8 6-8zm0 4c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3z"/></svg>
+          </div>
+          <div>
+            <div style="font-family:'Roboto',sans-serif;font-weight:700;font-size:1rem;color:#fff;line-height:1.2;">MINDKRAFT</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:0.68rem;letter-spacing:0.24em;color:#956E46;">FARM VENTURE</div>
+          </div>
+        </div>
+        <p style="color:rgba(255,255,255,0.42);font-size:0.85rem;line-height:1.85;max-width:290px;margin-bottom:1.5rem;">
+          A professionally managed broiler chicken farm based in Osogbo, Osun State, Nigeria. Supplying fresh, high-quality poultry to households, restaurants, and commercial buyers since May 2026.
+        </p>
+        <div class="divider-gold"></div>
+      </div>
+
+      <!-- Spacer -->
+      <div class="hidden md:block md:col-span-1"></div>
+
+      <!-- Quick links -->
+      <div class="md:col-span-2">
+        <h4 style="font-family:'Roboto',sans-serif;font-weight:600;font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:1.2rem;">Navigation</h4>
+        <ul class="space-y-3">
+          <li><a href="#about" style="color:rgba(255,255,255,0.52);font-size:0.86rem;" class="hover:text-white transition-colors">About Us</a></li>
+          <li><a href="#offerings" style="color:rgba(255,255,255,0.52);font-size:0.86rem;" class="hover:text-white transition-colors">Our Products</a></li>
+          <li><a href="#process" style="color:rgba(255,255,255,0.52);font-size:0.86rem;" class="hover:text-white transition-colors">Our Process</a></li>
+          <li><a href="#quality" style="color:rgba(255,255,255,0.52);font-size:0.86rem;" class="hover:text-white transition-colors">Quality Assurance</a></li>
+          <li><a href="#buyers" style="color:rgba(255,255,255,0.52);font-size:0.86rem;" class="hover:text-white transition-colors">Who We Serve</a></li>
+          <li><a href="#contact" style="color:rgba(255,255,255,0.52);font-size:0.86rem;" class="hover:text-white transition-colors">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Products -->
+      <div class="md:col-span-2">
+        <h4 style="font-family:'Roboto',sans-serif;font-weight:600;font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:1.2rem;">Products</h4>
+        <ul class="space-y-3">
+          <li><a href="#offerings" style="color:rgba(255,255,255,0.52);font-size:0.86rem;" class="hover:text-white transition-colors">Live Broilers</a></li>
+          <li><a href="#offerings" style="color:rgba(255,255,255,0.52);font-size:0.86rem;" class="hover:text-white transition-colors">Dressed Chicken</a></li>
+          <li><a href="#offerings" style="color:rgba(255,255,255,0.52);font-size:0.86rem;" class="hover:text-white transition-colors">Bulk &amp; Wholesale</a></li>
+          <li><a href="#contact" style="color:rgba(255,255,255,0.52);font-size:0.86rem;" class="hover:text-white transition-colors">Place an Order</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="md:col-span-3">
+        <h4 style="font-family:'Roboto',sans-serif;font-weight:600;font-size:0.68rem;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:1.2rem;">Contact</h4>
+        <div class="space-y-4">
+          <div class="flex items-start gap-3">
+            <svg class="w-4 h-4 flex-shrink-0 mt-0.5" fill="none" stroke="#956E46" stroke-width="1.7" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <span style="color:rgba(255,255,255,0.48);font-size:0.84rem;line-height:1.7;">Osogbo, Osun State,<br/>Nigeria</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <svg class="w-4 h-4 flex-shrink-0 mt-0.5" fill="none" stroke="#956E46" stroke-width="1.7" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            <span style="color:rgba(255,255,255,0.48);font-size:0.84rem;">info@mindkraftfarm.com</span>
+          </div>
+          <div style="margin-top:16px;padding:12px 16px;background:rgba(255,255,255,0.05);border-radius:2px;border-left:2px solid #956E46;">
+            <div style="font-size:0.76rem;color:rgba(255,255,255,0.35);margin-bottom:4px;letter-spacing:0.08em;">LAUNCH DATE</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:#D4A96A;font-weight:500;">May 2026 · Osogbo</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="border-top:1px solid rgba(255,255,255,0.07);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
+      <p style="color:rgba(255,255,255,0.22);font-size:0.78rem;">© 2026 MindKraft Farm Venture. All rights reserved.</p>
+      <p style="color:rgba(255,255,255,0.18);font-size:0.74rem;">Osogbo · Osun State · Nigeria</p>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+  // Nav shadow on scroll
+  const nav = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('nav-scrolled', window.scrollY > 20);
+  });
+
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const t = document.querySelector(a.getAttribute('href'));
+      if (t) {
+        e.preventDefault();
+        const offset = 80;
+        const top = t.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top, behavior: 'smooth' });
+        document.getElementById('mob').classList.add('hidden');
+      }
+    });
+  });
+
+  // FAQ accordion
+  function toggleFaq(btn) {
+    const body = btn.nextElementSibling;
+    const icon = btn.querySelector('svg');
+    const isOpen = body.classList.contains('open');
+    // Close all
+    document.querySelectorAll('.accordion-body').forEach(b => b.classList.remove('open'));
+    document.querySelectorAll('#faq button svg').forEach(i => i.style.transform = '');
+    if (!isOpen) {
+      body.classList.add('open');
+      icon.style.transform = 'rotate(180deg)';
+    }
+  }
+</script>
+</body>
+</html>

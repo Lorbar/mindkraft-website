@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="520" height="200" viewBox="0 0 520 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background: transparent (for use on light surfaces) -->
+
+  <!-- Top rule trio: thin · thick · thin -->
+  <line x1="40"  y1="32"  x2="480" y2="32"  stroke="#956E46" stroke-width="1"/>
+  <line x1="40"  y1="39"  x2="480" y2="39"  stroke="#956E46" stroke-width="4"/>
+  <line x1="40"  y1="46"  x2="480" y2="46"  stroke="#956E46" stroke-width="1"/>
+
+  <!-- Main wordmark -->
+  <text x="260" y="115"
+        font-family="'Roboto', Helvetica, Arial, sans-serif"
+        font-weight="900"
+        font-size="60"
+        fill="#1E446A"
+        text-anchor="middle"
+        letter-spacing="10">MINDKRAFT</text>
+
+  <!-- Diamond ornament + flanking rules -->
+  <line x1="40"  y1="128" x2="228" y2="128" stroke="#956E46" stroke-width="1" opacity="0.6"/>
+  <polygon points="260,121 266,128 260,135 254,128" fill="#956E46"/>
+  <line x1="292" y1="128" x2="480" y2="128" stroke="#956E46" stroke-width="1" opacity="0.6"/>
+
+  <!-- Subtitle -->
+  <text x="260" y="158"
+        font-family="'Cormorant Garamond', Georgia, serif"
+        font-weight="500"
+        font-size="22"
+        fill="#956E46"
+        text-anchor="middle"
+        letter-spacing="14">FARM VENTURE</text>
+
+  <!-- Bottom rule trio: thin · thick · thin -->
+  <line x1="40"  y1="170" x2="480" y2="170" stroke="#956E46" stroke-width="1"/>
+  <line x1="40"  y1="177" x2="480" y2="177" stroke="#956E46" stroke-width="4"/>
+  <line x1="40"  y1="184" x2="480" y2="184" stroke="#956E46" stroke-width="1"/>
+</svg>
