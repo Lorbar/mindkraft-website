@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mindkraftfarmventure.netlify.app/sitemap.xml
